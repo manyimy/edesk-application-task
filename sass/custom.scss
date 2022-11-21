@@ -1,0 +1,26 @@
+// import functions & variables
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_nav";
+@import "../node_modules/bootstrap/scss/_navbar";
+
+$nav-link-padding-y:                .75rem;
+$nav-link-padding-x:                .75rem;
+$nav-tabs-link-hover-border-color: $gray-200 $nav-tabs-border-color $gray-200 $gray-200;
+$nav-tabs-link-active-border-color: $gray-300 $nav-tabs-link-active-bg $gray-300 $gray-300;
+
+
+.nav-tabs .nav-link {
+  border-top-left-radius: var(--bs-nav-tabs-border-radius);
+  border-top-right-radius: 0rem !important;
+  border-bottom-left-radius: var(--bs-nav-tabs-border-radius);
+}
+
+.nav-tabs {
+  border-right: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+  border-bottom: 0 solid var(--#{$prefix}nav-tabs-border-color);
+}
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
