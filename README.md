@@ -17,7 +17,7 @@ A development task for edesk job application purpose.
   - React Hook Form
   - React Router (Optional)
   
-![Sample print screen](./src/img/sample.png)
+![Sample print screen](./src/res/img/sample.png)
 
 # Getting Started with Create React App
 
