@@ -19,7 +19,7 @@ $nav-tabs-link-active-border-color: $gray-300 $nav-tabs-link-active-bg $gray-300
 
 .nav-tabs {
   border-right: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
-  border-bottom: 0 solid var(--#{$prefix}nav-tabs-border-color);
+  border-bottom: 0 !important;
 }
 
 // import bootstrap

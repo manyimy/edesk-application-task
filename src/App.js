@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <div class="container-sm bg-light p-3">
+      <div class="container-sm p-3">
         <div class="nav flex-column my-auto mx-auto p-3">
           <div class="d-flex align-items-start">
             <div class="nav flex-column nav-tabs me-3" id="nav-tab" role="tablist" aria-orientation="vertical">
@@ -29,7 +29,7 @@ function App() {
               <button class="nav-link" id="tabs-messages-tab" data-bs-toggle="tab" data-bs-target="#tabs-messages" type="button" role="tab" aria-controls="v-tabs-messages" aria-selected="false">Messages</button>
               <button class="nav-link" id="tabs-settings-tab" data-bs-toggle="tab" data-bs-target="#tabs-settings" type="button" role="tab" aria-controls="v-tabs-settings" aria-selected="false">Settings</button>
             </div>
-            <div class="tab-content" id="tabs-tabContent">
+            <div class="tab-content w-100" id="tabs-tabContent">
               <div class="tab-pane fade show active" id="tabs-home" role="tabpanel" aria-labelledby="v-tabs-home-tab" tabindex="0"><HomeTab /></div>
               <div class="tab-pane fade" id="tabs-profile" role="tabpanel" aria-labelledby="v-tabs-profile-tab" tabindex="0"><ProfileTab /></div>
               <div class="tab-pane fade" id="tabs-messages" role="tabpanel" aria-labelledby="v-tabs-messages-tab" tabindex="0">This is messages page.</div>
