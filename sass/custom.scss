@@ -4,6 +4,7 @@
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/_nav";
 @import "../node_modules/bootstrap/scss/_navbar";
+@import "../node_modules/bootstrap/scss/_reboot";
 
 $nav-link-padding-y:                .75rem;
 $nav-link-padding-x:                .75rem;
@@ -20,6 +21,11 @@ $nav-tabs-link-active-border-color: $gray-300 $nav-tabs-link-active-bg $gray-300
 .nav-tabs {
   border-right: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
   border-bottom: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0rem !important;
 }
 
 // import bootstrap

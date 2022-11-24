@@ -11,21 +11,21 @@ function ProfileTab() {
   };
 
   return(
-    <form class="row g-3 text-start">
-      {/* <div class="col-auto">
-        <label for="staticEmail2" class="visually-hidden">Email</label>
-        <input type="text" class="form-control" id="inputEmail2" value="email@example.com" />
+    <form className="row g-3 text-start">
+      {/* <div className="col-auto">
+        <label for="staticEmail2" className="visually-hidden">Email</label>
+        <input type="text" className="form-control" id="inputEmail2" value="email@example.com" />
       </div>
-      <div class="col-auto">
-        <label for="inputPassword2" class="visually-hidden">Password</label>
-        <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />
+      <div className="col-auto">
+        <label for="inputPassword2" className="visually-hidden">Password</label>
+        <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
       </div> */}
-        <div class="mb-3 row">
-          <label for="staticUID" class="col-sm-2 col-form-label">User ID</label>
-          <div class="col-sm-10">
+        <div className="mb-3 row">
+          <label for="staticUID" className="col-sm-2 col-form-label">User ID</label>
+          <div className="col-sm-10">
             <input 
               type="text" 
-              class="form-control" 
+              className="form-control" 
               id="inputUID" 
               value={userId} 
               onChange={(e) => setUserId(e.target.value)}
@@ -33,12 +33,12 @@ function ProfileTab() {
             />
           </div>
         </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
+        <div className="mb-3 row">
+          <label for="inputPassword" className="col-sm-2 col-form-label">Password</label>
+          <div className="col-sm-10">
             <input
               type="password"
-              class="form-control"
+              className="form-control"
               id="inputPassword"
               value={pwd}
               onChange={(e) => setPwd(e.target.value)}
@@ -46,8 +46,8 @@ function ProfileTab() {
             />
           </div>
         </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3" onClick={handleSubmit}>Submit</button>
+      <div className="col-auto">
+        <button type="submit" className="btn btn-primary mb-3" onClick={handleSubmit}>Submit</button>
       </div>
     </form>
   );
