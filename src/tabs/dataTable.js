@@ -9,19 +9,15 @@ import {
     Search, 
     KeyboardDoubleArrowLeft, 
     KeyboardDoubleArrowRight,
-    // UnfoldMore,
 } from "@mui/icons-material";
 
 
 function DataTable({resultData}) {
     const [page, setPage] = useState(1);
-    const [totalPage, setTotalPage] = useState(1);
 
     useEffect(() => {
-        setTotalPage(Math.ceil(resultData.length/5));
         console.log(resultData);
-            
-    }, []);
+    });
     
     const printData = (event, item) => {
         console.log(item);
@@ -113,11 +109,6 @@ function DataTable({resultData}) {
                                     </li>        
                                 );
                             })}
-                            {/* <li className="page-item active"><a href="/#" onChange={() => setPage(1)} className="page-link">1</a></li>
-                            <li className="page-item"><a href="/#" onChange={() => setPage(2)} className="page-link">2</a></li>
-                            <li className="page-item"><a href="/#" className="page-link">3</a></li>
-                            <li className="page-item"><a href="/#" className="page-link">4</a></li>
-                            <li className="page-item"><a href="/#" className="page-link">5</a></li> */}
                             <li 
                               className={`page-item ${page===Math.ceil(resultData.length/5) ? "visually-hidden" : ""}`} 
                               onClick={() => setPage(page+1)}

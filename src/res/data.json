@@ -225,21 +225,21 @@
     "country": "USA"
   },
   {
-    "id": "24",
-    "name": "Bryson Finch",
-    "address": "4179 Hoffman Avenue",
-    "city": "New York City",
-    "state": "New York",
-    "pinCode": "10013",
-    "country": "USA"
+    "id": "26",
+    "name": "Addison Finch",
+    "address": "7630 Hoffman Avenue",
+    "city": "Armstrong",
+    "state": "British Columbia",
+    "pinCode": "V0E 1B0",
+    "country": "Canada"
   },
   {
-    "id": "25",
-    "name": "Cole Averill",
+    "id": "26",
+    "name": "Phoebe Walter",
     "address": "1170 Oak Drive",
     "city": "Albany",
     "state": "New York",
-    "pinCode": "12210",
+    "pinCode": "12222",
     "country": "USA"
   }
 ]

@@ -12,14 +12,6 @@ function ProfileTab() {
 
   return(
     <form className="row g-3 text-start">
-      {/* <div className="col-auto">
-        <label for="staticEmail2" className="visually-hidden">Email</label>
-        <input type="text" className="form-control" id="inputEmail2" value="email@example.com" />
-      </div>
-      <div className="col-auto">
-        <label for="inputPassword2" className="visually-hidden">Password</label>
-        <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
-      </div> */}
         <div className="mb-3 row">
           <label for="staticUID" className="col-sm-2 col-form-label">User ID</label>
           <div className="col-sm-10">
