@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./dataTable.css";
 // import custData from "../res/data.json";
 
@@ -15,12 +15,13 @@ import {
 
 function DataTable({resultData}) {
     const [page, setPage] = useState(1);
-    const [totalPage] = useState(Math.ceil(resultData.length/5));
+    const [totalPage, setTotalPage] = useState(1);
 
-    // useEffect(() => {
-    //     console.log(resultData);
+    useEffect(() => {
+        setTotalPage(Math.ceil(resultData.length/5));
+        console.log(resultData);
             
-    // }, [selectedKey, resultData]);
+    }, []);
     
     const printData = (event, item) => {
         console.log(item);
@@ -92,7 +93,7 @@ function DataTable({resultData}) {
                         </tbody>
                     </table>
                     <div className="clearfix">
-                        <div className="hint-text">Showing <b>{(resultData.length >= 5) ? (page !== totalPage) ? 5 :  resultData.length%5 : resultData.length%5}</b> out of <b>{resultData.length}</b> entries</div>
+                        <div className="hint-text">Showing <b>{(resultData.length > 5) ? (page !== Math.ceil(resultData.length/5)) ? 5 : resultData.length%5 : resultData.length}</b> out of <b>{resultData.length}</b> entries</div>
                         <ul className="pagination">
                             <li
                               className={`page-item ${page===1 ? "visually-hidden" : ""}`}
@@ -102,7 +103,7 @@ function DataTable({resultData}) {
                                 <KeyboardDoubleArrowLeft />
                               </a>
                             </li>
-                            {[...Array(totalPage).keys()].map((data, index) => {
+                            {[...Array(Math.ceil(resultData.length/5)).keys()].map((data, index) => {
                                 return (
                                     <li 
                                       className={`page-item ${page===data+1 ? "active" : ""}`} 
@@ -118,7 +119,7 @@ function DataTable({resultData}) {
                             <li className="page-item"><a href="/#" className="page-link">4</a></li>
                             <li className="page-item"><a href="/#" className="page-link">5</a></li> */}
                             <li 
-                              className={`page-item ${page===totalPage ? "visually-hidden" : ""}`} 
+                              className={`page-item ${page===Math.ceil(resultData.length/5) ? "visually-hidden" : ""}`} 
                               onClick={() => setPage(page+1)}
                             >
                               <a href="/#" className="page-link">
